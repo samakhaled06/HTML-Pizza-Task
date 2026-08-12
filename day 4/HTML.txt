@@ -1,0 +1,37 @@
+HTML |HyperText Markup Language
+-It is used to build and structure web pages, and tells the browser how that webpage was build and what each part of it represents.
+-It is not a programming language but a markup language.
+-It consists of tags that represent elements
+-These tags need attributes to add additional information and costumizes the elements.
+-Some of the important tags that we need to know:
+<html>	Root element of an HTML document
+<head>	Contains metadata,links to other files as css and js.
+<title>	Sets the page title.
+<body>	Contains the content displayes on the page.
+<p>	 Paragraph
+<br>	Line break
+<hr>	Horizontal line
+<strong>	Important (bold) text
+<em>	Emphasized (italic) text
+<b>	Bold text
+<i>	Italic text
+<a> anchor for links
+<ul> un ordered lists
+<ol> ordered lists
+<img> for images
+<table> tables
+<form> for collecting data from user
+<header>	Header section
+<nav>	Navigation bar
+<main>	Main content
+<section>	Content section
+<aside>	Sidebar
+<footer>	Footer
+-Some important attributes:
+Href:with anchor refers to link
+Src: with images to specify img path
+Alt:with images to describe pic
+ id: gives an element a unique identifier
+Class: groups elements with the same class
+Target: specifies where to open the linked page
+
