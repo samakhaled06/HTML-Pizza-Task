@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --main-color: coral;
+    --secondary-color: violet;
+}
+
+body {
+    min-height: 100vh;
+}
+
+h1 {
+    background-color: var(--main-color);
+
+}
+
+.main-content {
+    width: 80%;
+}
+
+.main-content img {
+    width: 30vw;
+    max-width: 100rem;
+    cursor: help;
+}
+
+.skills {
+    --skills-bg: cadetblue;
+    background-color: var(--skills-bg)
+}
+
+.personal-class {
+    color: black;
+}
+
+#personal {
+    color: blue;
+    font-size: 30px;
+
+}
+
+ul,
+a {
+    color: var(--secondary-color);
+    cursor: grab;
+}
+
+section>h2 {
+    background-color: aquamarine;
+    cursor: not-allowed;
+}
+
+/*i used important to make sure the name will always be red*/
+h1:hover {
+    color: crimson !important;
+    cursor: pointer;
+}
+
+.about p {
+    height: 200px;
+    overflow: scroll;
+    background-image: url(../images/images\ \(1\).jfif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+footer {
+    min-height: 2em;
+    background: red url(../images/IMG_5717.JPG) no-repeat fixed top;
+
+}
