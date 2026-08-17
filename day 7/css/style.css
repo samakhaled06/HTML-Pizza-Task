@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(240, 209, 213);
+}
+
+.card {
+    width: 80%;
+    background-color: rgba(234, 237, 149, 0.548);
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    border: 2px dotted rgb(120, 114, 116);
+    border-radius: 20px;
+    box-shadow: 7px 7px 5px rgb(79, 65, 65);
+}
+
+.card img {
+    width: 30%;
+    border: 5px rgb(240, 209, 213) groove;
+    border-radius: 50%;
+}
+
+.lora-<uniquifier> {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+h1,
+p,
+button {
+    font-family: "Lora";
+    font-weight: 100;
+    line-height: 2rem;
+    color: rgb(114, 94, 88);
+}
+
+button {
+    background-color: rgb(240, 209, 213);
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+h1 {
+    font-weight: 500;
+    background-color: rgb(240, 209, 213);
+
+}
+
+button:hover {
+    cursor: pointer;
+}
