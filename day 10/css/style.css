@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.baking-section-title{
+    background-color: rgb(183, 153, 119);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu  a{
+    color: rgb(227, 220, 194);
+}
+.logo img{
+    width: 10rem;
+}
+.baking-section-content{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    
+}
+.baking-section-card{
+    text-align: center;
+    background-color: rgb(82, 70, 54);
+    color: rgb(227, 220, 194);
+    text-shadow: 1px 2px rgb(115, 98, 78);
+    flex: 0 0 25%;
+    padding: 20px;
+}
+.baking-section-card img{
+    width: 100%;
+    border-radius: 5px;
+    margin: 0px 0px 12px auto;
+}
+
+#carouselExample{
+    text-align: center;
+    text-shadow: 1px 2px rgb(82, 70, 54);
+    padding: 15px 0;
+    color: rgb(227, 220, 194);
+    background-color: rgb(115, 98, 78);
+
+}
+.carousel-inner{
+    width: 40%;
+    margin:15px auto;
+}
+.footer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: bisque;
+    color: rgba(49, 55, 49, 0.593);
+    text-align: center;
+}
+@media only screen and (max-width: 1200px){
+    .baking-section-card{
+        flex: 0 0 25%;
+    }
+}
+@media only screen and (max-width: 992px){
+    .baking-section-content{
+grid-template-columns: repeat(2 , 1fr);    }
+}
+@media only screen and (max-width: 768px){
+    .baking-section-title{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .baking-section-content{
+        grid-template-columns: 1fr;
+    }
+    
+}
