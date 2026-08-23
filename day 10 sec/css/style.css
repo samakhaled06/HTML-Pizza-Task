@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgba(235, 237, 173, 0.9);
+    text-align: center;
+    text-shadow: 1px 2px 5px black;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+    gap: 40px;
+    padding: 50px;
+
+    background-color: rgba(216, 210, 210, 0.377);
+}
+
+.about button {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(212, 216, 220);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #000;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #000;
+    line-height: 1.7;
+}
+
+.about-text button {
+    margin-top: 15px;
+    padding: 10px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #000;
+    color: white;
+
+    cursor: pointer;
+}
+
+.about-text button:hover {
+    background-color: #444;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+.photo-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    padding: 40px;
+}
+
+.photo-section-card {
+    text-align: center;
+
+    background-color: white;
+    color: rgb(17, 16, 14);
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.photo-section-card:hover {
+    transform: translateY(-5px);
+}
+
+.photo-section-card img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+    margin-bottom: 12px;
+}
+
+.photo-section-card h3 {
+    margin-top: 5px;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgba(222, 203, 203, 0.856);
+
+    height: 400px;
+
+    text-shadow: 1px 2px rgba(212, 105, 24, 0.358);
+}
+
+
+
+footer {
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px;
+    color: #ccc;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+    .photo-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+@media only screen and (max-width: 578px) {
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .photo-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .photo-section-card img {
+        height: 220px;
+    }
+
+}
