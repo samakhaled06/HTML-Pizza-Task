@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cadetblue;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+.search{
+    display: flex;
+    max-width: 600px;
+    margin: 10px;
+
+}
+
+button{
+    background-color: lightpink;
+    color: aliceblue;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+#Container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card{
+    background-color: whitesmoke;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+@media only screen(max-width:500px){
+    #Container{
+        grid-template-column:1fr
+    }
+    .search{
+        flex-direction: column;
+    }
+}
